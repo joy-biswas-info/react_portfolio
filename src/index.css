@@ -6,6 +6,10 @@
   list-style: none;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
 
 body {
   background: linear-gradient(to bottom, #12071f, #2f204e);
@@ -21,6 +25,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+section {
+  height: 100vh;
+  scroll-snap-align: middle;
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
